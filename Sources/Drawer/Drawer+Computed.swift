@@ -54,10 +54,10 @@ extension Drawer {
                 }
                 .offset(y: proxy.frame(in: .global).height + self.offset)
                 .frame(maxHeight: .infinity)
-                .animation(self.animation)
+                .animation(self.animation, value: dragging)
                 .gesture(self.dragGesture)
-                .edgesIgnoringSafeArea(.all)
             }
+            .edgesIgnoringSafeArea(.all)
         }
     }
 }

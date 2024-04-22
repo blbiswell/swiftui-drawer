@@ -31,8 +31,8 @@ public struct Drawer<Content>: View where Content: View {
     // MARK: Orientation
     
     public struct SizeClass: Equatable {
-        var horizontal: UserInterfaceSizeClass?
-        var vertical: UserInterfaceSizeClass?
+        public var horizontal: UserInterfaceSizeClass?
+        public var vertical: UserInterfaceSizeClass?
     }
     
     @Environment(\.verticalSizeClass) internal var verticalSizeClass
